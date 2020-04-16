@@ -16,7 +16,7 @@ export default makeStyles((theme: Theme): IStyles => ({
   },
   panel: {
     backgroundColor: '#f6f6f6',
-    boxShadow: '2px 2px 4px #a9a9a9',
+    boxShadow: '2px 2px 2px #a9a9a9',
     padding: theme.spacing(0),
   },
 }));
