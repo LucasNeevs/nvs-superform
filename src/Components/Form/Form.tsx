@@ -11,6 +11,7 @@ import MyCards from '../Cards/Cards';
 import { dataCards } from '../Cards/ICards';
 import { ICountry, Countries } from '../../Utils/Country';
 import { ICivil, CivilStates } from '../../Utils/CivilState';
+import Flag from 'react-world-flags';
 import useStyles from './Style';
 
 const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
@@ -88,6 +89,12 @@ const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
                   {
                     Countries.map((c: ICountry): React.ReactElement<HTMLElement> => (
                       <MenuItem key={c.id} value={c.name}>
+                        <Flag
+                          code={c.icon}
+                          width="15"
+                          height="15"
+                          className={classes.flag}
+                        />
                         {c.name}
                       </MenuItem>
                     ))
