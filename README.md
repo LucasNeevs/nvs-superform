@@ -8,7 +8,7 @@ Hello! This repository is just a part of  my study about some good technologies 
 
 ## How it works?
 
-Fizz buzz, int the roots, is a group word game for children to teach them about division. Players take turns to count incrementally, replacing any number divisible by three with the word "Fizz", any number divisible by five with the word "Buzz" and, when the number is divisible by three and by five, return the word "FizzBuzz". To use it is very simple. Just input the name on the left field and the value to fizz, on right field. Later it, click on the button FizzBuzz! to return the result in the panel above.
+To use it is very simple. Just input the correct data on the fields, like the pattern applied. Later it, click on the button Create to return the result in the panel above.
 
 ## Important to know!
 
