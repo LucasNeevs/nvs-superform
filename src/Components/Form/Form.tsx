@@ -13,6 +13,7 @@ import { ICountry, Countries } from '../../Utils/Country';
 import { ICivil, CivilStates } from '../../Utils/CivilState';
 import Flag from 'react-world-flags';
 import useStyles from './Style';
+import { Validation } from './Form.validation';
 
 const MyForm = (props: FormikProps<IForm>): React.ReactElement<HTMLElement> => {
   const {
@@ -293,8 +294,8 @@ export default withFormik({
   displayName: 'MyForm',
   enableReinitialize: true,
   mapPropsToValues: (): IForm => (initialValues),
+  validationSchema: Validation,
   handleSubmit: (values: IForm, { resetForm, setSubmitting }) => {
-    alert(JSON.stringify(values));
     dataCards.push({
       id: dataCards.length,
       name: values.name,

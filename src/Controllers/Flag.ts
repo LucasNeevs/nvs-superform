@@ -19,4 +19,4 @@ export default (props: IFlag): string => {
       return 'undefined'
     }
   }
-}
+};
